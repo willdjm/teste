@@ -1,8 +1,67 @@
 import Image from 'next/image'
 
 export default function Home() {
+  
   return (
     <main>
+
+
+{/* <!-- NAVBARFIXA --> */}
+  <div className="w-full">
+    {/* <!-- NAVBARFIXA DESKTOP --> */}
+    <nav className="fixed bottom-0 z-50 justify-center items-center w-full hidden lg:flex">
+      <div className="relative flex items-center justify-center">
+        <img className="cursor-pointer" src="/logo-footer.png" width="100%" height="100%" alt="..."/>
+        <div className="absolute flex items-center justify-between w-full max-w-6xl">
+          <ul className="flex w-full items-center justify-end gap-7">
+            <li className="ml-3">
+              <a className="flex items-center justify-center gap-1" href="#">
+                <p className="text-white uppercase text-base">
+                  Perdizes
+                </p>
+                <i className="fa-brands fa-whatsapp text-white"></i>
+                <p className="text-xs text-white">(11) <span className="text-base text-white">99999-0938</span></p>
+              </a>
+            </li>
+            <li className="ml-3">
+              <a className="flex items-center justify-center gap-1" href="#">
+                <p className="text-white uppercase text-base">
+                  Pinheiros
+                </p>
+                <i className="fa-brands fa-whatsapp text-white"></i>
+                <p className="text-xs text-white">(11) <span className="text-base text-white">99939-9934</span></p>
+              </a>
+            </li>
+            <li className="ml-3 font-bold">
+              <a className="flex items-center justify-center gap-1" href="#">
+                <p className="text-white uppercase text-base">
+                  Jardins
+                </p>
+                <i className="fa-brands fa-whatsapp text-white"></i>
+                <p className="text-xs text-white">(11) <span className="text-base text-white">99999-0938</span></p>
+              </a>
+            </li>
+            <li className="ml-3">
+              <a className="flex items-center justify-center gap-1" href="#">
+                <p className="text-white uppercase text-base">
+                  Vila Romana
+                </p>
+                <i className="fa-brands fa-whatsapp text-white"></i>
+                <p className="text-xs text-white">(11) <span className="text-base text-white">93207-3204</span></p>
+              </a>
+            </li>
+          </ul>        
+        </div>
+      </div>
+    </nav>
+
+    {/* <!-- NAVBARFIXA MOBILE --> */}
+    <nav className="flex fixed bottom-0 z-50 justify-center items-center w-full md:hidden">
+        <a href="index.html">
+          <img className="cursor-pointer" src="/logo-barra-mobile.png" width="100%" height="100%" alt="..."/>
+        </a>
+    </nav>
+  </div>
 
 {/* <!-- BUSCA --> */}
   <section className="flex w-full justify-center items-center px-5 py-10">
@@ -711,3 +770,4 @@ export default function Home() {
     </main>
   )
 }
+
