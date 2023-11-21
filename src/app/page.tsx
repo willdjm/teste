@@ -3,111 +3,97 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+  <section class="flex w-full justify-center items-center py-20 px-5 bg-gray-300">
+    <div class='lg:justify-between justify-center w-full items-center flex flex-col lg:max-w-6xl'>
+      <h3 class="lg:text-xl font-semibold text-xl text-red-700 text-center pb-10 uppercase">Blog</h3>
+
+      <div class="md:flex grid gap-2 items-start lg:items-center lg:justify-between justify-center w-full">
+
+        <div class="relative w-72 lg:w-full group max-w-xs gap-4 grid">
+          <div class="relative group">
+            <img src="/Blog-img1.png" alt="Photo" class="w-full rounded" />
+            <span
+              class="absolute justify-center items-center left-10 lg:block hidden w-60 h-0 transition-all bg-red-700 opacity-70 group-hover:h-60 top-1/2 group-hover:rounded-lg group-hover:top-10 duration-300 ease-in-out"></span>
+            <div
+              class="absolute h-60 w-60 lg:flex hidden justify-center top-10 left-10 items-center opacity-0 group-hover:opacity-100">
+              <div class="flex-row text-center">
+                <a href="blog.html">
+                  <button class="text-white text-sm">
+                    Continuar lendo...
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-red-700 py-2 font-medium">
+            COMO USUFRUIR DE OBJETOS DECORATIVOS NA SALA DE ESTAR
+          </h2>
+          <p class="text-black font-medium text-sm">
+            Objetos de decoração pode ser aliados na decoração da sua sala de estar. Aprenda a usá-los
+            corretamente neste artigo!
+          </p>
+        </div>
+
+        <div class="relative w-72 lg:w-full group max-w-xs gap-4 grid">
+          <div class="relative group">
+            <img src="/Blog-img2.png" alt="Photo" class="w-full rounded" />
+            <span
+              class="absolute justify-center items-center left-10 lg:block hidden w-60 h-0 transition-all bg-red-700 opacity-70 group-hover:h-60 top-1/2 group-hover:rounded-lg group-hover:top-10 duration-300 ease-in-out"></span>
+            <div
+              class="absolute h-60 w-60 lg:flex hidden justify-center top-10 left-10 items-center opacity-0 group-hover:opacity-100">
+              <div class="flex-row text-center">
+                <a href="blog.html">
+                  <button class="text-white text-sm">
+                    Continuar lendo...
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-red-700 py-2 font-medium">
+            3 VANTAGENS DE MORAR EM PINHEIROS
+          </h2>
+          <p class="text-black font-medium text-sm">
+            O bairro Pinheiros é um dos mais antigos da capital paulista e também é um bairro completo. Com
+            opções de lazer para toda a família e imóveis de alto padrão!
+          </p>
+        </div>
+
+        <div class="relative w-72 lg:w-full group max-w-xs gap-4 grid">
+          <div class="relative group">
+            <img src="/Blog-img3.png" alt="Photo" class="w-full rounded" />
+            <span
+              class="absolute justify-center items-center left-10 lg:block hidden w-60 h-0 transition-all bg-red-700 opacity-70 group-hover:h-60 top-1/2 group-hover:rounded-lg group-hover:top-10 duration-300 ease-in-out"></span>
+            <div
+              class="absolute h-60 w-60 lg:flex hidden justify-center top-10 left-10 items-center opacity-0 group-hover:opacity-100">
+              <div class="flex-row text-center">
+                <a href="blog.html">
+                  <button class="text-white text-sm">
+                    Continuar lendo...
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-red-700 py-2 font-medium">
+            ZIMMERMANN FECHA PARCERIA COM MARCA LÍDER EM MÓVEIS PLANEJADOS!
+          </h2>
+          <p class="text-black font-medium text-sm">
+            Plus Design, marca do grupo Italínea, dará aos clientes da Zimmermann um desconto exclusivo em
+            seus projetos de móveis planejados.
+          </p>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
+      <button
+        class="flex my-10 hover:bg-red-700 border hover:border-transparent border-black rounded-full text-black hover:text-white font-medium hover:px-6 py-2 px-3 transition-all duration-300 ease-in-out">
+        <a href="">
+          Mais notícias
         </a>
+      </button>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    </div>
+  </section>
     </main>
   )
 }
