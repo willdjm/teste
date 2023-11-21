@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
   <section className="flex w-full justify-center items-center py-20 px-5 bg-gray-300">
     <div className='lg:justify-between justify-center w-full items-center flex flex-col lg:max-w-6xl'>
       <h3 className="lg:text-xl font-semibold text-xl text-red-700 text-center pb-10 uppercase">Blog</h3>
